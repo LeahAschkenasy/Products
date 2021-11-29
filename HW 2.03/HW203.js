@@ -64,7 +64,6 @@
         fillTable();
         ClearTextboxes($('#title-textbox'));
         ClearTextboxes($('#description-textbox'));
-
     });
 
     $("body").on('click', '.btn-link', function () {
@@ -104,6 +103,5 @@
         const button = $(this);
         const categoryId = button.data('categoryId');
         $(`#products-table-${categoryId}`).toggle();
-    });
-
+    })
 });
